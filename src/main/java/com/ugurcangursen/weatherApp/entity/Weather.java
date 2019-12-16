@@ -12,7 +12,52 @@ public class Weather {
     private String sunsetTime;
     private String date;
 
-    public Weather() {
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getWeatherID() {
+        return weatherID;
+    }
+
+    public String getSunriseTime() {
+        return sunriseTime;
+    }
+
+    public void setSunriseTime(String sunriseTime) {
+        this.sunriseTime = sunriseTime;
+    }
+
+    public String getSunsetTime() {
+        return sunsetTime;
+    }
+
+    public void setSunsetTime(String sunsetTime) {
+        this.sunsetTime = sunsetTime;
+    }
+
+    public void setWeatherID(String weatherID) {
+        this.weatherID = weatherID;
+    }
+
+    public String getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(String humidity) {
+        this.humidity = humidity;
+    }
+
+    public String getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
     }
 
     public String getCity() {
@@ -39,66 +84,12 @@ public class Weather {
         this.temperature = temperature;
     }
 
-    public String getHumidity() {
-        return humidity;
-    }
-
-    public void setHumidity(String humidity) {
-        this.humidity = humidity;
-    }
-
-    public String getPressure() {
-        return pressure;
-    }
-
-    public void setPressure(String pressure) {
-        this.pressure = pressure;
-    }
-
-    public String getWeatherID() {
-        return weatherID;
-    }
-
-    public void setWeatherID(String weatherID) {
-        this.weatherID = weatherID;
-    }
-
-    public String getSunriseTime() {
-        return sunriseTime;
-    }
-
-    public void setSunriseTime(String sunriseTime) {
-        this.sunriseTime = sunriseTime;
-    }
-
-    public String getSunsetTime() {
-        return sunsetTime;
-    }
-
-    public void setSunsetTime(String sunsetTime) {
-        this.sunsetTime = sunsetTime;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
     @Override
     public String toString() {
-        return "Weather{" +
-                "city='" + city + '\'' +
-                ", description='" + description + '\'' +
-                ", temperature='" + temperature + '\'' +
-                ", humidity='" + humidity + '\'' +
-                ", pressure='" + pressure + '\'' +
-                ", weatherID='" + weatherID + '\'' +
-                ", sunriseTime='" + sunriseTime + '\'' +
-                ", sunsetTime='" + sunsetTime + '\'' +
-                ", date='" + date + '\'' +
-                '}';
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("City: " + city + ";");
+        buffer.append("Temperature: " + temperature + ";");
+        buffer.append("Description: " + description + ";");
+        return buffer.toString();
     }
 }
