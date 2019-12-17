@@ -1,7 +1,7 @@
-package com.ugurcangursen.weatherApp.repository;
+package com.ugurcangursen.weatherApp.repository.impl;
 
-import com.ugurcangursen.weatherApp.entity.City;
-import com.ugurcangursen.weatherApp.entity.User;
+import com.ugurcangursen.weatherApp.entity.WeatherLog;
+import com.ugurcangursen.weatherApp.repository.WeatherLogDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
@@ -10,45 +10,45 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 @Repository
-public class CityDaoImpl implements CityDAO {
+public class WeatherLogDaoImpl implements WeatherLogDAO {
     private EntityManager entityManager;
 
-    public CityDaoImpl(EntityManager entityManager) {
+    public WeatherLogDaoImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
     @Override
-    public List<City> findAll() {
+    public List<WeatherLog> findAll() {
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
 
         // create a query
-        Query<City> theQuery =
-                currentSession.createQuery("select a from City a", City.class);
+        Query<WeatherLog> theQuery =
+                currentSession.createQuery("select a from City a", WeatherLog.class);
 
-        List<City>  cities = theQuery.getResultList();
+        List<WeatherLog>  weatherLogs = theQuery.getResultList();
 
         // return the results
-        return cities;
+        return weatherLogs;
     }
 
     @Override
-    public City findById(long id) {
+    public WeatherLog findById(long id) {
         Session currentSession = entityManager.unwrap(Session.class);
 
-        City city =
-                currentSession.get(City.class, id);
+        WeatherLog weatherLog =
+                currentSession.get(WeatherLog.class, id);
 
-        return city;
+        return weatherLog;
     }
 
     @Override
-    public void save(City city) {
+    public void save(WeatherLog weatherLog) {
 
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
 
         // save city
-        currentSession.saveOrUpdate(city);
+        currentSession.saveOrUpdate(weatherLog);
     }
 
 
@@ -62,7 +62,7 @@ public class CityDaoImpl implements CityDAO {
         // delete object with primary key
         Query theQuery =
                 currentSession.createQuery(
-                        "delete from City where id=:id");
+                        "delete from WeatherLog where id=:id");
         theQuery.setParameter("id", id);
 
         theQuery.executeUpdate();
