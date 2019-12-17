@@ -21,6 +21,7 @@ public class WeatherLog extends BaseEntity {
     private User user;
 
 
+
     @Column (name = "temperature")
     private String temperature;
 
