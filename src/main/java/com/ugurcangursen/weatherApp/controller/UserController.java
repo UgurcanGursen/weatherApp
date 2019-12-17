@@ -49,12 +49,17 @@ public class UserController {
 
     // add mapping for PUT /user - update existing user
 
-    @PutMapping("/users")
-    public User updateUser(@RequestBody User user) {
+    @PutMapping("/user/{id}")
+    public Boolean updateUser(@PathVariable long id) {
 
-        userService.save(user);
+       User user = userService.update(id);
 
-        return user;
+        if (user == null){
+            throw new RuntimeException("User id not found -" +id);
+        }
+
+        userService.update(id);
+        return true;
     }
 
     // add mapping for DELETE /users/{id} - delete user

@@ -1,9 +1,7 @@
 package com.ugurcangursen.weatherApp.service.impl;
 
 import com.ugurcangursen.weatherApp.entity.City;
-import com.ugurcangursen.weatherApp.entity.User;
 import com.ugurcangursen.weatherApp.repository.CityDAO;
-import com.ugurcangursen.weatherApp.repository.UserDAO;
 import com.ugurcangursen.weatherApp.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,9 +40,11 @@ public class CityServiceImpl implements CityService {
         cityDAO.save(city);
     }
 
+
     @Override
     @Transactional
-    public void deleteById(long id) {
+    public City deleteById(long id) {
         cityDAO.deleteById(id);
+        return null;
     }
 }

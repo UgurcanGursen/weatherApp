@@ -11,5 +11,5 @@ public interface CityService {
 
     public void save(City city);
 
-    public void deleteById(long id);
+    public City deleteById(long id);
 }
