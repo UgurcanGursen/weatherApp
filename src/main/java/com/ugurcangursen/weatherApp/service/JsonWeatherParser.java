@@ -48,8 +48,8 @@ public class JsonWeatherParser {
             String sunriseTime = new java.text.SimpleDateFormat("HH:mm")
                     .format(new java.util.Date(sunrise * 1000));
 
-            String today = new java.text.SimpleDateFormat("MM/dd/yyyy")
-                    .format(new java.util.Date(sunrise * 1000));
+            String queryTime = new java.text.SimpleDateFormat("dd-MM-yyyy' 'HH:mm:ss")
+                    .format(new java.util.Date());
 
             Long sunset = Long.parseLong(getJsonLongObjectDescription(sysArray, "sunset"));
             String sunsetTime = new java.text.SimpleDateFormat("HH:mm")
@@ -57,7 +57,7 @@ public class JsonWeatherParser {
 
             weather.setSunriseTime(sunriseTime);
             weather.setSunsetTime(sunsetTime);
-            weather.setDate(today);
+            weather.setDate(queryTime);
 
         } catch (NumberFormatException nfe) {
             nfe.printStackTrace();
@@ -68,8 +68,8 @@ public class JsonWeatherParser {
     }
 
     private String getTemperatureDescription(JSONObject jsonObject) throws NumberFormatException, JSONException {
-        Double temp = new Double(jsonObject.get("temp").toString());
-        return (temp > 0 ? "+" : "") + String.valueOf(Math.round(temp));
+        Double temp = new Double((jsonObject.get("temp")).toString());
+        return (temp > 0 ? "+" : "") + String.valueOf(Math.round(temp - 273.15));
     }
 
     private String getJsonIntegerObjectDescription(JSONObject jsonObject, String valueName) {
