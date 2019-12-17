@@ -18,15 +18,21 @@ public class User {
     @Column(name = "pwd")
     private String password;
 
+    @Column(name = "user_role")
+    @Enumerated(EnumType.STRING)
+    private UserRole userRole;
+
     public User() {
     }
 
-    public User(Long id,String userName,String password) {
+    public User(Long id, String userName, String password, UserRole userRole) {
         super();
         this.id = id;
         this.userName = userName;
         this.password = password;
+        this.userRole = userRole;
     }
+
 
     public Long getId() {
         return id;
@@ -52,6 +58,14 @@ public class User {
         this.password = password;
     }
 
+    public UserRole getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(UserRole userRole) {
+        this.userRole = userRole;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -73,6 +87,6 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, password);
+        return Objects.hash(id, userName, password, userRole);
     }
 }
