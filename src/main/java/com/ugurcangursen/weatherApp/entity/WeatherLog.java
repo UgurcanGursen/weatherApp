@@ -20,6 +20,7 @@ public class WeatherLog extends BaseEntity {
     @ManyToOne(optional = true, fetch = FetchType.LAZY)
     private User user;
 
+
     @Column (name = "temperature")
     private String temperature;
 
