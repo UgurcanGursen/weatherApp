@@ -31,6 +31,12 @@ public class WeatherServiceImpl implements WeatherService {
         return getWeatherFromJson(getJsonFromServer(city));
     }
 
+//    @Override
+//    public Weather save(Weather weather) {
+//        weatherDAO.save(weather);
+//        return weather;
+//    }
+
 
     private Weather getWeatherFromJson(String json)
             throws ParseException, org.json.simple.parser.ParseException, JSONException {
@@ -53,6 +59,8 @@ public class WeatherServiceImpl implements WeatherService {
         in.close();
         return result;
     }
+
+
 
 
 }

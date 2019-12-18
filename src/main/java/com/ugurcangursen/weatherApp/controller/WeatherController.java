@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.text.ParseException;
 
+
 @RestController
 public class WeatherController {
 
@@ -22,10 +23,19 @@ public class WeatherController {
         this.weatherService = weatherService;
     }
 
-    @RequestMapping(value = "/weather/{city}", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "/weather/{city}", method = {RequestMethod.GET})
     public Weather currentWeather(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
+
         return weatherService.getCurrentWeather(city);
     }
+
+//    @RequestMapping(value = "/weather/{city}", method = {RequestMethod.POST})
+//    public Weather currentWeatherPOST(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
+//
+//        Weather postW = weatherService.getCurrentWeather(city);
+//        weatherService.save(postW);
+//         return postW;
+//    }
 
 
 }
