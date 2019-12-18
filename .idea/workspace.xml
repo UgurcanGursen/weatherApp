@@ -8,23 +8,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/WeatherService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/WeatherAppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/WeatherAppApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/controller/CityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/controller/CityController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/controller/WeatherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/controller/WeatherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/City.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/Weather.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/WeatherLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/WeatherLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/WeatherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/WeatherDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/CityDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/CityDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/WeatherLogDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/WeatherLogDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/JsonWeatherParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/JsonWeatherParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/WeatherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/CityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/CityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,52 +202,52 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2752" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576583879672" />
-    <state width="1877" height="355" key="GridCell.Tab.0.bottom" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="355" key="GridCell.Tab.0.bottom/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.0.center" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="355" key="GridCell.Tab.0.center/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.0.left" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="355" key="GridCell.Tab.0.left/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.0.right" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="355" key="GridCell.Tab.0.right/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.1.bottom" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.1.bottom" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881581" />
     <state width="1877" height="355" key="GridCell.Tab.1.bottom/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.1.center" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.1.center" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881581" />
     <state width="1877" height="355" key="GridCell.Tab.1.center/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.1.left" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.1.left" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881581" />
     <state width="1877" height="355" key="GridCell.Tab.1.left/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
-    <state width="1877" height="355" key="GridCell.Tab.1.right" timestamp="1576679208241">
-      <screen x="3840" y="111" width="1920" height="1040" />
+    <state width="1877" height="234" key="GridCell.Tab.1.right" timestamp="1576680688713">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="882" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
+    <state width="1877" height="234" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576680688713" />
     <state width="1877" height="882" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881581" />
     <state width="1877" height="355" key="GridCell.Tab.1.right/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576679208241" />
     <state x="4330" y="305" key="Maven.ArtifactSearchDialog" timestamp="1576491943203">

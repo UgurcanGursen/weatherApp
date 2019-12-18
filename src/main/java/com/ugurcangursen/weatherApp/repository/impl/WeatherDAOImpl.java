@@ -23,14 +23,14 @@ public class WeatherDAOImpl implements WeatherDAO {
     }
 
 
-//    @Override
-//    public void save(Weather weather) {
-//
-//        // get the current hibernate session
-//        Session currentSession = entityManager.unwrap(Session.class);
-//
-//        // save user
-//        currentSession.saveOrUpdate(weather);
-//
-//    }
+    @Override
+    public void save(Weather weather) {
+
+        // get the current hibernate session
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        // save user
+        currentSession.saveOrUpdate(weather);
+
+    }
 }

@@ -26,16 +26,13 @@ public class WeatherController {
     @RequestMapping(value = "/weather/{city}", method = {RequestMethod.GET})
     public Weather currentWeather(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
 
-        return weatherService.getCurrentWeather(city);
+        Weather wt = weatherService.getCurrentWeather(city);
+        weatherService.save(wt);
+        return  wt;
     }
 
-//    @RequestMapping(value = "/weather/{city}", method = {RequestMethod.POST})
-//    public Weather currentWeatherPOST(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
-//
-//        Weather postW = weatherService.getCurrentWeather(city);
-//        weatherService.save(postW);
-//         return postW;
-//    }
+
+    }
 
 
-}
+
