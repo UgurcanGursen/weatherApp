@@ -1,9 +1,20 @@
 package com.ugurcangursen.weatherApp.entity;
 
-public class Weather {
+import javax.persistence.*;
 
+@Entity
+@Table(name = "weather_logs")
+public class Weather extends BaseEntity {
+
+    @Id
+    @Column(name = "weather_log_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long weather_log_id;
+    @Column(name = "log_city")
     private String city;
+    @Column(name = "weather_description")
     private String description;
+    @Column(name = "log_temperature")
     private String temperature;
     private String humidity;
     private String pressure;
@@ -24,6 +35,10 @@ public class Weather {
         return weatherID;
     }
 
+    public void setWeatherID(String weatherID) {
+        this.weatherID = weatherID;
+    }
+
     public String getSunriseTime() {
         return sunriseTime;
     }
@@ -32,16 +47,20 @@ public class Weather {
         this.sunriseTime = sunriseTime;
     }
 
+    public Long getWeather_log_id() {
+        return weather_log_id;
+    }
+
+    public void setWeather_log_id(Long weather_log_id) {
+        this.weather_log_id = weather_log_id;
+    }
+
     public String getSunsetTime() {
         return sunsetTime;
     }
 
     public void setSunsetTime(String sunsetTime) {
         this.sunsetTime = sunsetTime;
-    }
-
-    public void setWeatherID(String weatherID) {
-        this.weatherID = weatherID;
     }
 
     public String getHumidity() {
@@ -86,10 +105,17 @@ public class Weather {
 
     @Override
     public String toString() {
-        StringBuffer buffer = new StringBuffer();
-        buffer.append("City: " + city + ";");
-        buffer.append("Temperature: " + temperature + ";");
-        buffer.append("Description: " + description + ";");
-        return buffer.toString();
+        return "Weather{" +
+                "weather_log_id=" + weather_log_id +
+                ", city='" + city + '\'' +
+                ", description='" + description + '\'' +
+                ", temperature='" + temperature + '\'' +
+                ", humidity='" + humidity + '\'' +
+                ", pressure='" + pressure + '\'' +
+                ", weatherID='" + weatherID + '\'' +
+                ", sunriseTime='" + sunriseTime + '\'' +
+                ", sunsetTime='" + sunsetTime + '\'' +
+                ", date='" + date + '\'' +
+                '}';
     }
 }

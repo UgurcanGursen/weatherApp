@@ -1,17 +1,18 @@
 package com.ugurcangursen.weatherApp.service;
 
 import com.ugurcangursen.weatherApp.entity.Weather;
-import java.util.Iterator;
 import org.json.JSONException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.Iterator;
+
 public class JsonWeatherParser {
 
-    private String jsonToParsing;
     private final JSONParser parser = new JSONParser();
+    private String jsonToParsing;
 
     public void setJsonToParsing(String jsonToParsing) {
         this.jsonToParsing = jsonToParsing;
@@ -39,7 +40,7 @@ public class JsonWeatherParser {
 
         weather.setTemperature(getTemperatureDescription(mainConditionsArray));
         weather.setHumidity(getJsonIntegerObjectDescription(mainConditionsArray, "humidity"));
-        weather.setPressure(getJsonIntegerObjectDescription	(mainConditionsArray, "pressure"));
+        weather.setPressure(getJsonIntegerObjectDescription(mainConditionsArray, "pressure"));
         weather.setCity(String.valueOf(mainJsonObj.get("name")));
 
         try {

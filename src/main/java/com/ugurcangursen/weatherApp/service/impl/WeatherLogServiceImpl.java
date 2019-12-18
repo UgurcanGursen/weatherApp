@@ -8,7 +8,7 @@ import java.util.List;
 
 public class WeatherLogServiceImpl implements WeatherLogService {
 
-   private WeatherLogDAO weatherLogDAO;
+    private WeatherLogDAO weatherLogDAO;
 
     public WeatherLogServiceImpl(WeatherLogDAO weatherLogDAO) {
         this.weatherLogDAO = weatherLogDAO;
@@ -32,6 +32,6 @@ public class WeatherLogServiceImpl implements WeatherLogService {
 
     @Override
     public void deleteById(long id) {
-    weatherLogDAO.deleteById(id);
+        weatherLogDAO.deleteById(id);
     }
 }

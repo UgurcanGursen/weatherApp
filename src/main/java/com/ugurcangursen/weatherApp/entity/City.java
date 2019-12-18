@@ -19,30 +19,6 @@ public class City extends BaseEntity {
     @OneToMany(fetch = FetchType.LAZY)
     private List<WeatherLog> weatherLog;
 
-    public Long getId() {
-        return id;
-    }
-
-    public List<WeatherLog> getWeatherLog() {
-        return weatherLog;
-    }
-
-    public void setWeatherLog(List<WeatherLog> weatherLog) {
-        this.weatherLog = weatherLog;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
     public City() {
     }
 
@@ -53,5 +29,29 @@ public class City extends BaseEntity {
         this.cityName = cityName;
         this.weatherLog = weatherLog;
 
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<WeatherLog> getWeatherLog() {
+        return weatherLog;
+    }
+
+    public void setWeatherLog(List<WeatherLog> weatherLog) {
+        this.weatherLog = weatherLog;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 }

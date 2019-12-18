@@ -4,8 +4,10 @@ import com.ugurcangursen.weatherApp.entity.Weather;
 import com.ugurcangursen.weatherApp.service.WeatherService;
 import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -20,9 +22,10 @@ public class WeatherController {
         this.weatherService = weatherService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/byCity/{city}")
+    @RequestMapping(value = "/weather/{city}", method = {RequestMethod.GET, RequestMethod.POST})
     public Weather currentWeather(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
         return weatherService.getCurrentWeather(city);
     }
+
 
 }

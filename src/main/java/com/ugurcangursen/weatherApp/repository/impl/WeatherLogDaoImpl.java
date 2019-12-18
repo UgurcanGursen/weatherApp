@@ -16,6 +16,7 @@ public class WeatherLogDaoImpl implements WeatherLogDAO {
     public WeatherLogDaoImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
+
     @Override
     public List<WeatherLog> findAll() {
         // get the current hibernate session
@@ -25,7 +26,7 @@ public class WeatherLogDaoImpl implements WeatherLogDAO {
         Query<WeatherLog> theQuery =
                 currentSession.createQuery("select a from City a", WeatherLog.class);
 
-        List<WeatherLog>  weatherLogs = theQuery.getResultList();
+        List<WeatherLog> weatherLogs = theQuery.getResultList();
 
         // return the results
         return weatherLogs;
@@ -50,7 +51,6 @@ public class WeatherLogDaoImpl implements WeatherLogDAO {
         // save city
         currentSession.saveOrUpdate(weatherLog);
     }
-
 
 
     @Override

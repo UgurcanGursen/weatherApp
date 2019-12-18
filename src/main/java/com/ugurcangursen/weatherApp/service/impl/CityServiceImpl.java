@@ -21,7 +21,6 @@ public class CityServiceImpl implements CityService {
     }
 
 
-
     @Override
     @Transactional
     public List<City> findAll() {

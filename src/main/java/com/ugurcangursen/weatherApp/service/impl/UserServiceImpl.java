@@ -20,7 +20,6 @@ public class UserServiceImpl implements UserService {
     }
 
 
-
     @Override
     @Transactional
     public List<User> findAll() {
@@ -39,15 +38,16 @@ public class UserServiceImpl implements UserService {
         userDAO.save(user);
     }
 
-    @Transactional
-    public User update(long id){
-    userDAO.update(id);
-        return null;
-    }
 
     @Override
     @Transactional
     public void deleteById(long id) {
         userDAO.deleteById(id);
+    }
+
+    @Override
+    @Transactional
+    public void update(long id, User user) {
+        userDAO.update(id, user);
     }
 }

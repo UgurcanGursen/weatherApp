@@ -1,7 +1,6 @@
 package com.ugurcangursen.weatherApp.repository.impl;
 
 import com.ugurcangursen.weatherApp.entity.City;
-import com.ugurcangursen.weatherApp.entity.User;
 import com.ugurcangursen.weatherApp.repository.CityDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -17,6 +16,7 @@ public class CityDaoImpl implements CityDAO {
     public CityDaoImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
+
     @Override
     public List<City> findAll() {
         // get the current hibernate session
@@ -26,7 +26,7 @@ public class CityDaoImpl implements CityDAO {
         Query<City> theQuery =
                 currentSession.createQuery("select a from City a", City.class);
 
-        List<City>  cities = theQuery.getResultList();
+        List<City> cities = theQuery.getResultList();
 
         // return the results
         return cities;
@@ -51,7 +51,6 @@ public class CityDaoImpl implements CityDAO {
         // save city
         currentSession.saveOrUpdate(city);
     }
-
 
 
     @Override

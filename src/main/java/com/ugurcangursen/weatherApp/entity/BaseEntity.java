@@ -19,8 +19,8 @@ public abstract class BaseEntity implements Serializable {
 
     public BaseEntity() {
         super();
-    this.createdAt = createdAt;
-    this.createdBy = createdBy;
+        this.createdAt = createdAt;
+        this.createdBy = createdBy;
     }
 
     public String getCreatedBy() {
