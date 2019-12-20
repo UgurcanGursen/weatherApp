@@ -17,12 +17,12 @@ public class City extends BaseEntity {
 
     @JoinColumn(name = "user_id")
     @OneToMany(fetch = FetchType.LAZY)
-    private List<WeatherLog> weatherLog;
+    private List<Weather> weatherLog;
 
     public City() {
     }
 
-    public City(Long id, String cityName, List<WeatherLog> weatherLog) {
+    public City(Long id, String cityName, List<Weather> weatherLog) {
         super();
 
         this.id = id;
@@ -39,11 +39,11 @@ public class City extends BaseEntity {
         this.id = id;
     }
 
-    public List<WeatherLog> getWeatherLog() {
+    public List<Weather> getWeatherLog() {
         return weatherLog;
     }
 
-    public void setWeatherLog(List<WeatherLog> weatherLog) {
+    public void setWeatherLog(List<Weather> weatherLog) {
         this.weatherLog = weatherLog;
     }
 

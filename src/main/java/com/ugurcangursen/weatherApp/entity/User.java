@@ -1,10 +1,11 @@
 package com.ugurcangursen.weatherApp.entity;
 
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user_db")
+@Table(name = "user_db",indexes = {@Index(name = "idx_username",columnList = "username")})
 public class User {
 
     @Id
@@ -18,21 +19,11 @@ public class User {
     @Column(name = "pwd")
     private String password;
 
-    @Column(name = "user_role")
-    @Enumerated(EnumType.STRING)
-    private UserRole userRole;
+    @Column(name = "role_name")
+    private String userRole;
 
     public User() {
     }
-
-    public User(Long id, String userName, String password, UserRole userRole) {
-        super();
-        this.id = id;
-        this.userName = userName;
-        this.password = password;
-        this.userRole = userRole;
-    }
-
 
     public Long getId() {
         return id;
@@ -58,11 +49,11 @@ public class User {
         this.password = password;
     }
 
-    public UserRole getUserRole() {
+    public String getUserRole() {
         return userRole;
     }
 
-    public void setUserRole(UserRole userRole) {
+    public void setUserRole(String userRole) {
         this.userRole = userRole;
     }
 
@@ -72,6 +63,7 @@ public class User {
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
+                ", userRole=" + userRole +
                 '}';
     }
 
@@ -80,13 +72,14 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return id == user.id &&
-                Objects.equals(userName, user.userName) &&
-                Objects.equals(password, user.password);
+        return Objects.equals(getId(), user.getId()) &&
+                Objects.equals(getUserName(), user.getUserName()) &&
+                Objects.equals(getPassword(), user.getPassword()) &&
+                Objects.equals(getUserRole(), user.getUserRole());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, password, userRole);
+        return Objects.hash(getId(), getUserName(), getPassword(), getUserRole());
     }
 }
