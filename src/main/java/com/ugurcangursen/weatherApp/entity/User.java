@@ -2,11 +2,13 @@ package com.ugurcangursen.weatherApp.entity;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user_db",indexes = {@Index(name = "idx_username",columnList = "username")})
-public class User {
+@Table(name = "user_db", indexes = {@Index(name = "idx_username", columnList = "username")})
+public class User implements Serializable {
 
     @Id
     @Column(name = "id")
@@ -19,8 +21,11 @@ public class User {
     @Column(name = "pwd")
     private String password;
 
-    @Column(name = "role_name")
-    private String userRole;
+    @JoinColumn(name = "role_id")
+    @ManyToOne(optional = true)
+    private UserRoles role;
+
+
 
     public User() {
     }
@@ -49,12 +54,12 @@ public class User {
         this.password = password;
     }
 
-    public String getUserRole() {
-        return userRole;
+    public UserRoles getRole() {
+        return role;
     }
 
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
+    public void setRole(UserRoles role) {
+        this.role = role;
     }
 
     @Override
@@ -63,7 +68,6 @@ public class User {
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", userRole=" + userRole +
                 '}';
     }
 
@@ -74,12 +78,13 @@ public class User {
         User user = (User) o;
         return Objects.equals(getId(), user.getId()) &&
                 Objects.equals(getUserName(), user.getUserName()) &&
-                Objects.equals(getPassword(), user.getPassword()) &&
-                Objects.equals(getUserRole(), user.getUserRole());
+                Objects.equals(getPassword(), user.getPassword());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getUserName(), getPassword(), getUserRole());
+        return Objects.hash(getId(), getUserName(), getPassword());
     }
+
+
 }
