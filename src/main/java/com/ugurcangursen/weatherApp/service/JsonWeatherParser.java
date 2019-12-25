@@ -38,10 +38,12 @@ public class JsonWeatherParser {
             weather.setWeatherID(weatherID);
         }
 
+
         weather.setTemperature(getTemperatureDescription(mainConditionsArray));
         weather.setHumidity(getJsonIntegerObjectDescription(mainConditionsArray, "humidity"));
         weather.setPressure(getJsonIntegerObjectDescription(mainConditionsArray, "pressure"));
         weather.setCity(String.valueOf(mainJsonObj.get("name")));
+
 
         try {
             /* Get date, sunrise and sunset times from unix epoch values */
@@ -56,6 +58,7 @@ public class JsonWeatherParser {
             String sunsetTime = new java.text.SimpleDateFormat("HH:mm")
                     .format(new java.util.Date(sunset * 1000));
 
+            weather.setCountry(String.valueOf(sysArray.get("country")));
             weather.setSunriseTime(sunriseTime);
             weather.setSunsetTime(sunsetTime);
             weather.setDate(queryTime);

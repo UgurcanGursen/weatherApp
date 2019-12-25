@@ -12,6 +12,7 @@ public class Weather extends BaseEntity {
     private Long weather_log_id;
     @Column(name = "log_city")
     private String city;
+    private String country;
     @Column(name = "weather_description")
     private String description;
     @Column(name = "log_temperature")
@@ -22,6 +23,41 @@ public class Weather extends BaseEntity {
     private String sunriseTime;
     private String sunsetTime;
     private String date;
+    private String ip;
+    private String result;
+    private long elapsedTime;
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public long getElapsedTime() {
+        return elapsedTime;
+    }
+
+    public void setElapsedTime(long elapsedTime) {
+        this.elapsedTime = elapsedTime;
+    }
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
 
     public String getDate() {
         return date;
@@ -108,6 +144,7 @@ public class Weather extends BaseEntity {
         return "Weather{" +
                 "weather_log_id=" + weather_log_id +
                 ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
                 ", description='" + description + '\'' +
                 ", temperature='" + temperature + '\'' +
                 ", humidity='" + humidity + '\'' +
@@ -116,6 +153,9 @@ public class Weather extends BaseEntity {
                 ", sunriseTime='" + sunriseTime + '\'' +
                 ", sunsetTime='" + sunsetTime + '\'' +
                 ", date='" + date + '\'' +
+                ", ip='" + ip + '\'' +
+                ", result='" + result + '\'' +
+                ", elapsedTime=" + elapsedTime +
                 '}';
     }
 }

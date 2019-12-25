@@ -32,7 +32,7 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
 
-    public Weather save(Weather weather) {
+    public Weather save(Weather weather) throws IOException {
         weatherDAO.save(weather);
         return weather;
     }

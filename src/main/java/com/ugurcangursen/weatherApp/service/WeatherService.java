@@ -10,5 +10,5 @@ public interface WeatherService {
 
     Weather getCurrentWeather(String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException;
 
-    public Weather save(Weather weather);
+    public Weather save(Weather weather) throws IOException;
 }
