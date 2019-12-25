@@ -10,15 +10,15 @@ import java.util.List;
 public class UserRoles implements Serializable {
 
     @Id
-    @Column(name = "id",insertable = false, updatable = false)
+    @Column(name = "id", insertable = false, updatable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "role_name",insertable = false, updatable = false)
+    @Column(name = "role_name", insertable = false, updatable = false)
     private String role_name;
 
 
-    @OneToMany(mappedBy="role")
+    @OneToMany(mappedBy = "role")
     private List<User> user;
 
 
@@ -38,6 +38,7 @@ public class UserRoles implements Serializable {
     public void setId(int id) {
         this.id = id;
     }
+
 
     public String getRole_name() {
         return role_name;

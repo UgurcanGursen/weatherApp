@@ -3,7 +3,6 @@ package com.ugurcangursen.weatherApp.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -24,7 +23,6 @@ public class User implements Serializable {
     @JoinColumn(name = "role_id")
     @ManyToOne(optional = true)
     private UserRoles role;
-
 
 
     public User() {

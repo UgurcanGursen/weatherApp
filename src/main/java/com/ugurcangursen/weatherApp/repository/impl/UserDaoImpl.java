@@ -1,7 +1,6 @@
 package com.ugurcangursen.weatherApp.repository.impl;
 
 
-
 import com.ugurcangursen.weatherApp.entity.User;
 import com.ugurcangursen.weatherApp.entity.UserRoles;
 import com.ugurcangursen.weatherApp.repository.UserDAO;
@@ -18,7 +17,6 @@ public class UserDaoImpl implements UserDAO {
 
     // define field for entitymanager
     private EntityManager entityManager;
-
 
 
     // set up constructor injection
@@ -74,6 +72,11 @@ public class UserDaoImpl implements UserDAO {
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
         // save user
+        if (user.getRole() == null) {
+            UserRoles role = new UserRoles(2);
+            user.setRole(role);
+        }
+
         currentSession.saveOrUpdate(user);
     }
 
@@ -108,8 +111,6 @@ public class UserDaoImpl implements UserDAO {
         return user;
 
     }
-
-
 
 
 }

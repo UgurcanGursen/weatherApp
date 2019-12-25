@@ -28,10 +28,8 @@ public class WeatherController {
 
         Weather wt = weatherService.getCurrentWeather(city);
         weatherService.save(wt);
-        return  wt;
+        return wt;
     }
-
-
 
 
 }
