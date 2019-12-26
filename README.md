@@ -4,7 +4,6 @@
 
 ## BİLGİ ## 
 
-
 ## INFO ##
 
 ## IMAGES ##
