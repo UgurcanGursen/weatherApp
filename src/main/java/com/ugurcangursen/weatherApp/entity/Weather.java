@@ -9,8 +9,8 @@ public class Weather extends BaseEntity {
     @Id
     @Column(name = "weather_log_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long weather_log_id;
-    @Column(name = "log_city")
+    private long id;
+    @Column(name = "city")
     private String city;
     private String country;
     @Column(name = "weather_description")
@@ -26,6 +26,15 @@ public class Weather extends BaseEntity {
     private String ip;
     private String result;
     private long elapsedTime;
+    private String icon;
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
 
     public String getCountry() {
         return country;
@@ -83,12 +92,12 @@ public class Weather extends BaseEntity {
         this.sunriseTime = sunriseTime;
     }
 
-    public Long getWeather_log_id() {
-        return weather_log_id;
+    public long getId() {
+        return id;
     }
 
-    public void setWeather_log_id(Long weather_log_id) {
-        this.weather_log_id = weather_log_id;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getSunsetTime() {
@@ -142,7 +151,7 @@ public class Weather extends BaseEntity {
     @Override
     public String toString() {
         return "Weather{" +
-                "weather_log_id=" + weather_log_id +
+                "id=" + id +
                 ", city='" + city + '\'' +
                 ", country='" + country + '\'' +
                 ", description='" + description + '\'' +

@@ -1,27 +1,20 @@
 package com.ugurcangursen.weatherApp.controller;
 
-import com.sun.deploy.net.HttpResponse;
+
 import com.ugurcangursen.weatherApp.entity.Weather;
 import com.ugurcangursen.weatherApp.service.WeatherService;
+import com.ugurcangursen.weatherApp.util.ControllerPaths;
 import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.elasticsearch.jest.HttpClientConfigBuilderCustomizer;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import sun.net.www.http.HttpClient;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.text.ParseException;
+import java.util.List;
 
 
 @RestController
+@RequestMapping(ControllerPaths.WeatherCtrl.CTRL)
 public class WeatherController {
 
     private final WeatherService weatherService;
@@ -31,17 +24,60 @@ public class WeatherController {
         this.weatherService = weatherService;
     }
 
-    @RequestMapping(value = "/weather/{city}", method = {RequestMethod.GET})
-    public ResponseEntity<Weather> currentWeather(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
+    @RequestMapping(value = "/{city}", method = {RequestMethod.GET})
+    public Weather currentWeather(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
 
+        Weather wt = new Weather();
         long start = System.currentTimeMillis();
-        Weather wt = weatherService.getCurrentWeather(city);
+        try {
+            wt = weatherService.getCurrentWeather(city);
+        } catch (Exception e) {
+        }
+
         long end = System.currentTimeMillis();
         long elapsed = end - start;
         wt.setElapsedTime(elapsed);
+
+        if (wt.getCountry() == null) {
+            wt.setResult("BAŞARISIZ");
+        } else {
+            wt.setResult("BAŞARILI");
+        }
+
+        wt.setCity(city);
         weatherService.save(wt);
 
-        return ResponseEntity.ok(wt);
+        return wt;
+    }
+
+    @GetMapping()
+    public List<Weather> findAll() {
+        return weatherService.findAll();
+    }
+
+
+    @GetMapping("/a/{id}")
+    public Weather getWeathersLogById(@PathVariable long id) {
+
+        Weather weather = weatherService.findById(id);
+
+        if (weather == null) {
+            throw new RuntimeException("Weather id not found - " + id);
+        }
+
+        return weather;
+    }
+
+    @GetMapping("/weathers/{city}")
+    public List<Weather> getWeatherLogByCity(@PathVariable String city) {
+
+        List<Weather> weather = weatherService.findByCity(city);
+
+        if (weather == null) {
+            throw new RuntimeException("City not found - " + city);
+        }
+
+        return weather;
     }
 
 

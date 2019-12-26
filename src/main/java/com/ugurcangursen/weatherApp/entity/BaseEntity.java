@@ -7,7 +7,6 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import java.io.Serializable;
-import java.text.DateFormat;
 import java.util.Date;
 
 @MappedSuperclass
@@ -21,7 +20,6 @@ public abstract class BaseEntity implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
     private Date createdAt;
-
 
 
     public String getCreatedBy() {

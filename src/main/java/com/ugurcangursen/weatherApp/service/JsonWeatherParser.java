@@ -34,6 +34,8 @@ public class JsonWeatherParser {
             JSONObject arrayValue = (JSONObject) i.next();
             String description = (String) arrayValue.get("description");
             String weatherID = String.valueOf(arrayValue.get("id"));
+            String icon = String.valueOf(arrayValue.get("icon"));
+            weather.setIcon(icon);
             weather.setDescription(description);
             weather.setWeatherID(weatherID);
         }

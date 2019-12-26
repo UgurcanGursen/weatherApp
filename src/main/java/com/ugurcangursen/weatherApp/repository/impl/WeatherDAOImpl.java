@@ -1,9 +1,10 @@
 package com.ugurcangursen.weatherApp.repository.impl;
 
+
 import com.ugurcangursen.weatherApp.entity.Weather;
 import com.ugurcangursen.weatherApp.repository.WeatherDAO;
 import org.hibernate.Session;
-import org.modelmapper.ModelMapper;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -11,8 +12,8 @@ import javax.persistence.EntityManager;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 
 @Repository
@@ -46,5 +47,50 @@ public class WeatherDAOImpl implements WeatherDAO {
         // save user
         currentSession.saveOrUpdate(weather);
 
+    }
+
+    @Override
+    public List<Weather> findAll() {
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        // create a query
+        Query<Weather> theQuery =
+                currentSession.createQuery("select a from Weather a", Weather.class);
+
+        // execute query and get result list
+        List<Weather> weathers = theQuery.getResultList();
+
+        // return the results
+        return weathers;
+    }
+
+    @Override
+    public Weather findById(long id) {
+        // get the current hibernate session
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        // get the weather
+        Weather weather =
+                currentSession.get(Weather.class, id);
+
+        // return the weather
+        return weather;
+    }
+
+    @Override
+    public List<Weather> findByCity(String city) {
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        // create a query
+        Query<Weather> theQuery =
+                currentSession.createQuery("select a from Weather a where a.city =: city ", Weather.class);
+        theQuery.setParameter("city", city);
+
+        // execute query and get result list
+        List<Weather> weathers = theQuery.getResultList();
+
+
+        // return the results
+        return weathers;
     }
 }

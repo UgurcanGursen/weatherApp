@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.ParseException;
+import java.util.List;
 
 
 @Service
@@ -35,6 +36,21 @@ public class WeatherServiceImpl implements WeatherService {
     public Weather save(Weather weather) throws IOException {
         weatherDAO.save(weather);
         return weather;
+    }
+
+    @Override
+    public List<Weather> findAll() {
+        return weatherDAO.findAll();
+    }
+
+    @Override
+    public Weather findById(long id) {
+        return weatherDAO.findById(id);
+    }
+
+    @Override
+    public List<Weather> findByCity(String city) {
+        return weatherDAO.findByCity(city);
     }
 
 
