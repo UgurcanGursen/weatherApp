@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b836b80a-de10-4712-8b0e-b9dfcf8c638a" name="Default Changelist" comment="add findById,findByCity,findAll methods for weather and edited Paths">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/util/ControllerPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/util/ControllerPaths$CityCtrl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/util/ControllerPaths$UserCtrl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/util/ControllerPaths$WeatherCtrl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/util/ControllerPaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/WeatherAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/WeatherAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/entity/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/entity/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/repository/WeatherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/repository/WeatherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/JsonWeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/JsonWeatherParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/controller/WeatherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/controller/WeatherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/entity/Weather.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/WeatherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/WeatherDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/repository/impl/WeatherDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/JsonWeatherParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/JsonWeatherParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/WeatherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ugurcangursen/weatherApp/service/impl/WeatherServiceImpl.class" afterDir="false" />
+    <list default="true" id="b836b80a-de10-4712-8b0e-b9dfcf8c638a" name="Default Changelist" comment="weather and logs module/component">
+      <change afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="user-role-system" />
+        <entry key="$PROJECT_DIR$" value="weather-controller" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,6 +65,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1V30GsPa1uZ4882YI3bOkAgrHb8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
