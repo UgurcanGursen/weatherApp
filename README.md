@@ -9,6 +9,8 @@
 
 ## IMAGES ##
 
+## TECHNOLOGIES ##
+
 ## KURULUM ##
 
 ## INSTALLATION ##
