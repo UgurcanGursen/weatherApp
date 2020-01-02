@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b836b80a-de10-4712-8b0e-b9dfcf8c638a" name="Default Changelist" comment="weather and logs module/component">
-      <change afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
+    <list default="true" id="b836b80a-de10-4712-8b0e-b9dfcf8c638a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/weatherApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weatherApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,15 +64,38 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="ts.external.directory.path" value="C:\Users\edagl\Desktop\Projects\weatherApp\src\webui\node_modules\typescript\lib" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="E2E Tests (WeatherAppUI)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/src/webui/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
     <configuration name="WeatherAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="weatherApp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ugurcangursen.weatherApp.WeatherAppApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/src/webui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
   </component>
   <component name="ServiceViewManager">
@@ -125,6 +132,10 @@
       <workItem from="1577256822375" duration="7786000" />
       <workItem from="1577271910870" duration="10669000" />
       <workItem from="1577342026113" duration="13559000" />
+      <workItem from="1577429644522" duration="2012000" />
+      <workItem from="1577448334746" duration="4533000" />
+      <workItem from="1577969301347" duration="1806000" />
+      <workItem from="1577971327819" duration="4289000" />
     </task>
     <task id="LOCAL-00001" summary="weather service and Json Parser">
       <created>1576496352168</created>
@@ -210,11 +221,23 @@
       <option name="project" value="LOCAL" />
       <updated>1577283816925</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="angular 8">
+      <created>1577368428378</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577368428378</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/webui/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -240,7 +263,8 @@
     <MESSAGE value="UserRoles and User class edited" />
     <MESSAGE value="set default role when saving new user (ROLE USER)" />
     <MESSAGE value="elapsed time for Get Weather Method" />
-    <option name="LAST_COMMIT_MESSAGE" value="elapsed time for Get Weather Method" />
+    <MESSAGE value="angular 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="angular 8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1577257434853">
@@ -266,59 +290,60 @@
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577261061565" />
     <state x="4530" y="377" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576823325608" />
-    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1577359543083">
+    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1577368426082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2415" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576589232819" />
-    <state x="495" y="114" key="CommitChangelistDialog2/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577359543083" />
+    <state x="495" y="114" key="CommitChangelistDialog2/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577368426082" />
     <state x="495" y="114" key="CommitChangelistDialog2/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577261425416" />
     <state x="4335" y="225" key="CommitChangelistDialog2/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1577197283269" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576564402271">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577969447737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576564402271" />
+    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577969447737" />
     <state x="740" y="274" key="FileChooserDialogImpl/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576478491667" />
     <state x="2752" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1576583879672">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2752" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576583879672" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1577358352375">
+    <state width="1877" height="404" key="GridCell.Tab.0.bottom" timestamp="1577972177224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
     <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="2" key="GridCell.Tab.0.bottom/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577358352375" />
-    <state width="1877" height="265" key="GridCell.Tab.0.bottom/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577352971363" />
+    <state width="1877" height="404" key="GridCell.Tab.0.bottom/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577972177224" />
     <state width="1877" height="350" key="GridCell.Tab.0.bottom/1920.0.1536.832/3840.379.640.440/0.0.1920.1040@0.0.1920.1040" timestamp="1577267905403" />
     <state width="1877" height="350" key="GridCell.Tab.0.bottom/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577264489594" />
     <state width="1877" height="350" key="GridCell.Tab.0.bottom/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1577198855654" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1577358352375">
+    <state width="1877" height="404" key="GridCell.Tab.0.center" timestamp="1577972177223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
     <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="2" key="GridCell.Tab.0.center/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577358352375" />
-    <state width="1877" height="265" key="GridCell.Tab.0.center/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577352971363" />
+    <state width="1877" height="404" key="GridCell.Tab.0.center/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577972177223" />
     <state width="1877" height="350" key="GridCell.Tab.0.center/1920.0.1536.832/3840.379.640.440/0.0.1920.1040@0.0.1920.1040" timestamp="1577267905403" />
     <state width="1877" height="350" key="GridCell.Tab.0.center/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577264489593" />
     <state width="1877" height="350" key="GridCell.Tab.0.center/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1577198855654" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1577358352375">
+    <state width="1877" height="404" key="GridCell.Tab.0.left" timestamp="1577972177223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
     <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="2" key="GridCell.Tab.0.left/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577358352375" />
-    <state width="1877" height="265" key="GridCell.Tab.0.left/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577352971362" />
+    <state width="1877" height="404" key="GridCell.Tab.0.left/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577972177223" />
     <state width="1877" height="350" key="GridCell.Tab.0.left/1920.0.1536.832/3840.379.640.440/0.0.1920.1040@0.0.1920.1040" timestamp="1577267905403" />
     <state width="1877" height="350" key="GridCell.Tab.0.left/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577264489593" />
     <state width="1877" height="350" key="GridCell.Tab.0.left/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1577198855654" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1577358352375">
+    <state width="1877" height="404" key="GridCell.Tab.0.right" timestamp="1577972177224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576593225501" />
     <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576592881565" />
     <state width="1877" height="2" key="GridCell.Tab.0.right/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577358352375" />
-    <state width="1877" height="265" key="GridCell.Tab.0.right/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577352971363" />
+    <state width="1877" height="404" key="GridCell.Tab.0.right/1920.0.1536.832/3840.379.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577972177224" />
     <state width="1877" height="350" key="GridCell.Tab.0.right/1920.0.1536.832/3840.379.640.440/0.0.1920.1040@0.0.1920.1040" timestamp="1577267905403" />
     <state width="1877" height="350" key="GridCell.Tab.0.right/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577264489593" />
     <state width="1877" height="350" key="GridCell.Tab.0.right/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1577198855654" />
@@ -390,11 +415,11 @@
       <screen x="3840" y="111" width="1920" height="1040" />
     </state>
     <state x="4301" y="273" key="SettingsEditor/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1576484427538" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1577283819267">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1577368431233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576589234862" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577283819267" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/1920.0.1536.832/3840.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577368431233" />
     <state x="552" y="241" key="Vcs.Push.Dialog.v2/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577261431861" />
     <state x="4392" y="352" key="Vcs.Push.Dialog.v2/1920.1.1536.832/3840.111.1920.1040/0.0.1920.1040@3840.111.1920.1040" timestamp="1577197290319" />
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1576590644570">
