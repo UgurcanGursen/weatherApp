@@ -1,3 +1,43 @@
 <div class="sd">
-    
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Hava Durumu</h2>
+    </div>
+  <div class="form-group">
+    <label>City: </label>
+    <input type="text" class="form-control" id="city" [(ngModel)]="cityName" name="city">
+  </div>
+    <button class="btn btn-primary" (click)="getWeather(cityName)">Get Weather</button>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Country</th>
+          <th>City</th>
+          <th>Temperature</th>
+          <th>Humidity</th>
+          <th>Pressure</th>
+          <th>Description</th>
+          <th>Sunrise Time</th>
+          <th>Sunset Time</th>
+        </tr>
+        </thead>
+        <tbody>
+<!--        <tr *ngFor="let weather of weathers | async">-->
+          <td><img [src]="'http://openweathermap.org/img/w/' + weathers.icon + '.png'" class="mr-2" style="width: 50px"></td>
+          <td>{{weathers.country}}</td>
+          <td>{{weathers.city}}</td>
+          <td>
+            {{weathers.temperature}}</td>
+          <td>{{weathers.humidity}}</td>
+          <td>{{weathers.pressure}}</td>
+          <td>{{weathers.description}}</td>
+          <td>{{weathers.sunriseTime}}</td>
+          <td>{{weathers.sunsetTime}}</td>
+<!--        </tr>-->
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>

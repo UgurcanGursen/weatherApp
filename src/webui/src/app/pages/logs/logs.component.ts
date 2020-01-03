@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Weather} from "../../common/weather";
+import {WeatherService} from "../../services/shared/weather.service";
+import {LogsService} from "../../services/shared/logs.service";
 
 @Component({
   selector: 'app-logs',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogsComponent implements OnInit {
 
-  constructor() { }
+  weathers: Weather [] = [];
+
+  constructor(private logsService: LogsService) { }
 
   ngOnInit() {
+
+    this.logsService.getAll().subscribe(res => {
+      this.weathers = res;
+    });
   }
 
 }

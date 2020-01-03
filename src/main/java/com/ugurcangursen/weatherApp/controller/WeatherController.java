@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(ControllerPaths.WeatherCtrl.CTRL)
+@CrossOrigin
 public class WeatherController {
 
     private final WeatherService weatherService;

@@ -1,1 +1,38 @@
-<p>logs works!</p>
+<div class="sd">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Hava Durumu</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Country</th>
+          <th>City</th>
+          <th>Temperature</th>
+          <th>Humidity</th>
+          <th>Pressure</th>
+          <th>Description</th>
+          <th>Sunrise Time</th>
+          <th>Sunset Time</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let w of weathers">
+        <td><img [src]="'http://openweathermap.org/img/w/' + w.icon + '.png'" class="mr-2" style="width: 50px"></td>
+        <td>{{w.country}}</td>
+        <td>{{w.city}}</td>
+        <td>
+          {{w.temperature}}</td>
+        <td>{{w.humidity}}</td>
+        <td>{{w.pressure}}</td>
+        <td>{{w.description}}</td>
+        <td>{{w.sunriseTime}}</td>
+        <td>{{w.sunsetTime}}</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
