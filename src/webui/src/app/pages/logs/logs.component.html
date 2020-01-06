@@ -3,6 +3,10 @@
     <div class="panel-heading">
       <h2>Hava Durumu</h2>
     </div>
+    <div class="form-group">
+      <input class="form-control" id="filterByCity" placeholder="Enter a City" [(ngModel)]="filterText">
+      <small id="filterHelp" class="form-text text-muted">Enter a city name for filtering weather logs</small>
+    </div>
     <div class="panel-body">
       <table class="table table-striped">
         <thead>
@@ -16,21 +20,30 @@
           <th>Description</th>
           <th>Sunrise Time</th>
           <th>Sunset Time</th>
+          <th>Elapsed Time</th>
+          <th>Result</th>
+          <th>Ip Address</th>
+          <th sortable="true">Created Date</th>
         </tr>
         </thead>
         <tbody>
-                <tr *ngFor="let w of weathers">
-        <td><img [src]="'http://openweathermap.org/img/w/' + w.icon + '.png'" class="mr-2" style="width: 50px"></td>
-        <td>{{w.country}}</td>
-        <td>{{w.city}}</td>
-        <td>
-          {{w.temperature}}</td>
-        <td>{{w.humidity}}</td>
-        <td>{{w.pressure}}</td>
-        <td>{{w.description}}</td>
-        <td>{{w.sunriseTime}}</td>
-        <td>{{w.sunsetTime}}</td>
-                </tr>
+        <tr *ngFor="let w of weathers | logsFilter:filterText">
+          <td><img [src]="'http://openweathermap.org/img/w/' + w.icon + '.png'" class="mr-2" style="width: 50px"></td>
+          <td>{{w.country}}</td>
+          <td>{{w.city}}</td>
+          <td>
+            {{w.temperature}} °C
+          </td>
+          <td>{{w.humidity}} %</td>
+          <td>{{w.pressure}} hpa</td>
+          <td>{{w.description}}</td>
+          <td>{{w.sunriseTime}}</td>
+          <td>{{w.sunsetTime}}</td>
+          <td>{{w.elapsedTime}} ms</td>
+          <td>{{w.result}}</td>
+          <td>{{w.ip}}</td>
+          <td>{{w.createdAt | date:'dd.MM.yyyy H:mm'}}</td>
+        </tr>
         </tbody>
       </table>
     </div>

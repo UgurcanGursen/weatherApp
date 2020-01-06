@@ -11,6 +11,7 @@ import {LogsService} from "../../services/shared/logs.service";
 export class LogsComponent implements OnInit {
 
   weathers: Weather [] = [];
+  filterText: string;
 
   constructor(private logsService: LogsService) { }
 

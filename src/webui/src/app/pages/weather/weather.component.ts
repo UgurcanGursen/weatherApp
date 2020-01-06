@@ -12,6 +12,8 @@ export class WeatherComponent implements OnInit {
   weathers: Weather;
   cityName: string;
 
+  visibleRrowIndex: number = null;
+
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {

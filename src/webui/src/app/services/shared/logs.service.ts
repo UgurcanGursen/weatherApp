@@ -26,15 +26,9 @@ export class LogsService {
   }
 
   getAll(): Observable<any> {
-    return this.apiService.get(this.WEATHER_PATH).pipe(map((
-      res => {
-        if (res) {
-          return res;
-        } else {
-          return {};
-        }
-      }
-    )));
+    return this.apiService.get(this.WEATHER_PATH).pipe(map(
+      res => res.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime() )
+    ));
   }
 
   getById(id): Observable<any> {
