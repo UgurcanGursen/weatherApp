@@ -45,18 +45,18 @@ export class LogsService {
   }
 
 
-  // delete(id): Observable<any> {
-  //   return this.apiService.delete(this.WEATHER_PATH + '/' + id).pipe(map(
-  //     res => {
-  //       if (res) {
-  //         return res;
-  //       } else {
-  //         console.log(res);
-  //         return {};
-  //       }
-  //     }
-  //   ));
-  // }
+  delete(id): Observable<any> {
+    return this.apiService.delete(this.WEATHER_PATH + '/w/' + id).pipe(map(
+      res => {
+        if (res) {
+          return res;
+        } else {
+          console.log(res);
+          return {};
+        }
+      }
+    ));
+  }
 
 
 }

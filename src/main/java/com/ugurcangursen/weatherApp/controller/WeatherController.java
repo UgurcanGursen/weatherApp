@@ -1,6 +1,7 @@
 package com.ugurcangursen.weatherApp.controller;
 
 
+import com.ugurcangursen.weatherApp.entity.User;
 import com.ugurcangursen.weatherApp.entity.Weather;
 import com.ugurcangursen.weatherApp.service.WeatherService;
 import com.ugurcangursen.weatherApp.util.ControllerPaths;
@@ -79,6 +80,22 @@ public class WeatherController {
         }
 
         return weather;
+    }
+
+    @DeleteMapping("/w/{id}")
+    public String deleteLogWeather(@PathVariable long id) {
+
+        Weather weather = weatherService.findById(id);
+
+        // throw exception if null
+
+        if (weather == null) {
+            throw new RuntimeException("Log id not found - " + id);
+        }
+
+        weatherService.deleteById(id);
+
+        return "Deleted log id - " + id;
     }
 
 

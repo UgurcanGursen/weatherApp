@@ -23,7 +23,8 @@
           <th>Elapsed Time</th>
           <th>Result</th>
           <th>Ip Address</th>
-          <th sortable="true">Created Date</th>
+          <th>Created Date</th>
+          <th>Delete</th>
         </tr>
         </thead>
         <tbody>
@@ -43,6 +44,7 @@
           <td>{{w.result}}</td>
           <td>{{w.ip}}</td>
           <td>{{w.createdAt | date:'dd.MM.yyyy H:mm'}}</td>
+          <th><button (click)="deleteLog(w.id)" class="btn btn-outline-danger my-2 my-sm-0">Delete </button></th>
         </tr>
         </tbody>
       </table>

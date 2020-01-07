@@ -12,7 +12,7 @@ export class WeatherComponent implements OnInit {
   weathers: Weather;
   cityName: string;
 
-  visibleRrowIndex: number = null;
+  isShow = false;
 
   constructor(private weatherService: WeatherService) { }
 
@@ -25,6 +25,10 @@ export class WeatherComponent implements OnInit {
       this.weathers = res;
       console.log(res);
     });
+  }
+
+  toggleDisplay() {
+    this.isShow = !this.isShow;
   }
 
 

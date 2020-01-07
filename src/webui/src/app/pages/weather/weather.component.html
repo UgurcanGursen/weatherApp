@@ -6,11 +6,11 @@
   <div class="input-group" style="padding-right: 60%; padding-left: 1%; padding-bottom: 2%; padding-top: 1%">
     <input style="padding-right: 10%" type="text" class="form-control" id="city" [(ngModel)]="cityName" name="city" placeholder="City Name">
     <span class="input-group-btn" style="margin-left: 5px">
-    <button class="btn btn-primary" (click)="getWeather(cityName);visibleRrowIndex=0">Get Weather</button>
+    <button class="btn btn-primary" (click)="getWeather(cityName); toggleDisplay()">Get Weather</button>
       </span>
   </div>
 
-    <div [hidden]="visibleRrowIndex!==0" class="panel-body">
+    <div *ngIf="isShow" class="panel-body">
       <table class="table table-striped">
         <thead>
         <tr>

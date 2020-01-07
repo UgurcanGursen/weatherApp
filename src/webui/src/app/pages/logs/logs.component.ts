@@ -22,4 +22,12 @@ export class LogsComponent implements OnInit {
     });
   }
 
+  deleteLog(value) {
+    return this.logsService.delete(value).subscribe(response => {
+      this.logsService.getAll().subscribe(res => {
+        this.weathers = res;
+      });
+    });
+  }
+
 }

@@ -8,6 +8,7 @@ import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,16 +40,25 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
     @Override
+    @Transactional
     public List<Weather> findAll() {
         return weatherDAO.findAll();
     }
 
     @Override
+    @Transactional
     public Weather findById(long id) {
         return weatherDAO.findById(id);
     }
 
     @Override
+    @Transactional
+    public void deleteById(long id) {
+        weatherDAO.deleteById(id);
+    }
+
+    @Override
+    @Transactional
     public List<Weather> findByCity(String city) {
         return weatherDAO.findByCity(city);
     }

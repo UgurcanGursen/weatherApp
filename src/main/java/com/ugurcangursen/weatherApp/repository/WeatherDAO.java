@@ -14,6 +14,8 @@ public interface WeatherDAO {
 
     public Weather findById(long id);
 
+    public void deleteById(long id);
+
     public List<Weather> findByCity(String city);
 
 }

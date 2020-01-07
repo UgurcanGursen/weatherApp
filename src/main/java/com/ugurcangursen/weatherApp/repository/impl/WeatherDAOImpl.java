@@ -78,6 +78,20 @@ public class WeatherDAOImpl implements WeatherDAO {
     }
 
     @Override
+    public void deleteById(long id) {
+        // get the current hibernate session
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        // delete object with primary key
+        Query theQuery =
+                currentSession.createQuery(
+                        "delete from Weather where id=:id");
+        theQuery.setParameter("id", id);
+
+        theQuery.executeUpdate();
+    }
+
+    @Override
     public List<Weather> findByCity(String city) {
         Session currentSession = entityManager.unwrap(Session.class);
 
