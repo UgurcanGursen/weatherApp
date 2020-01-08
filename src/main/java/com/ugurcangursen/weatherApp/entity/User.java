@@ -14,8 +14,11 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @Column(name = "username")
-    private String userName;
+    private String username;
+
+    private int rid;
 
     @Column(name = "pwd")
     private String password;
@@ -25,7 +28,17 @@ public class User implements Serializable {
     private UserRoles role;
 
 
+
     public User() {
+    }
+
+
+    public int getRid() {
+        return rid;
+    }
+
+    public void setRid(int rid) {
+        this.rid = rid;
     }
 
     public Long getId() {
@@ -36,12 +49,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -64,8 +77,9 @@ public class User implements Serializable {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", role=" + role +
                 '}';
     }
 
@@ -75,14 +89,13 @@ public class User implements Serializable {
         if (!(o instanceof User)) return false;
         User user = (User) o;
         return Objects.equals(getId(), user.getId()) &&
-                Objects.equals(getUserName(), user.getUserName()) &&
-                Objects.equals(getPassword(), user.getPassword());
+                Objects.equals(getUsername(), user.getUsername()) &&
+                Objects.equals(getPassword(), user.getPassword()) &&
+                Objects.equals(getRole(), user.getRole());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getUserName(), getPassword());
+        return Objects.hash(getId(), getUsername(), getPassword(), getRole());
     }
-
-
 }

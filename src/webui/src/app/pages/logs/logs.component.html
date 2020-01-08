@@ -22,9 +22,9 @@
           <th>Sunset Time</th>
           <th>Elapsed Time</th>
           <th>Result</th>
-          <th>Ip Address</th>
+          <th *ngIf="isAdmin">Ip Address</th>
           <th>Created Date</th>
-          <th>Delete</th>
+          <th *ngIf="isAdmin">Delete</th>
         </tr>
         </thead>
         <tbody>
@@ -42,9 +42,9 @@
           <td>{{w.sunsetTime}}</td>
           <td>{{w.elapsedTime}} ms</td>
           <td>{{w.result}}</td>
-          <td>{{w.ip}}</td>
+          <td *ngIf="isAdmin" style="color: crimson">{{w.ip}}</td>
           <td>{{w.createdAt | date:'dd.MM.yyyy H:mm'}}</td>
-          <th><button (click)="deleteLog(w.id)" class="btn btn-outline-danger my-2 my-sm-0">Delete </button></th>
+          <th *ngIf="isAdmin"><button (click)="deleteLog(w.id)" class="btn btn-outline-danger my-2 my-sm-0">Delete </button></th>
         </tr>
         </tbody>
       </table>

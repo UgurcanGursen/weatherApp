@@ -3,7 +3,9 @@ package com.ugurcangursen.weatherApp.repository.impl;
 
 import com.ugurcangursen.weatherApp.entity.User;
 import com.ugurcangursen.weatherApp.entity.UserRoles;
+import com.ugurcangursen.weatherApp.entity.Weather;
 import com.ugurcangursen.weatherApp.repository.UserDAO;
+import com.ugurcangursen.weatherApp.repository.UserRolesDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +19,15 @@ public class UserDaoImpl implements UserDAO {
 
     // define field for entitymanager
     private EntityManager entityManager;
+    private UserRolesDAO userRolesDAO;
 
 
     // set up constructor injection
     @Autowired
-    public UserDaoImpl(EntityManager theEntityManager) {
-        entityManager = theEntityManager;
+
+    public UserDaoImpl(EntityManager entityManager, UserRolesDAO userRolesDAO) {
+        this.entityManager = entityManager;
+        this.userRolesDAO = userRolesDAO;
     }
 
     @Override
@@ -55,14 +60,19 @@ public class UserDaoImpl implements UserDAO {
     }
 
     @Override
-    public User findByUsername(String userName) {
+    public User findByUsername(String username) {
         Session currentSession = entityManager.unwrap(Session.class);
 
-        // get the user
-        User user =
-                currentSession.get(User.class, userName);
+        // create a query
+        Query theQuery =
+                currentSession.createQuery("select a from User a where a.username =: username ", User.class);
+        theQuery.setParameter("username", username);
 
-        // return the user
+        // execute query and get result list
+        User user = (User) theQuery.list().get(0);
+
+
+        // return the results
         return user;
     }
 
@@ -72,6 +82,8 @@ public class UserDaoImpl implements UserDAO {
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
         // save user
+        UserRoles userRoles = userRolesDAO.findById(user.getRid());
+        user.setRole(userRoles);
         if (user.getRole() == null) {
             UserRoles role = new UserRoles(2);
             user.setRole(role);
@@ -103,9 +115,9 @@ public class UserDaoImpl implements UserDAO {
 
 
         Session currentSession = entityManager.unwrap(Session.class);
-        Query theQuery = currentSession.createQuery("update User  set password =:password,userName = :username where id =:id");
+        Query theQuery = currentSession.createQuery("update User  set password =:password,username = :username where id =:id");
         theQuery.setParameter("id", id);
-        theQuery.setParameter("username", user.getUserName());
+        theQuery.setParameter("username", user.getUsername());
         theQuery.setParameter("password", user.getPassword());
         theQuery.executeUpdate();
         return user;

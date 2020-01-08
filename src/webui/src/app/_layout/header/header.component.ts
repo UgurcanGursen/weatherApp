@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from "../../common/user";
+import {Router} from "@angular/router";
+import {AuthenticationService} from "../../security/authentication.service";
 
 @Component({
   selector: 'app-header',
@@ -7,10 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  currentUser: User;
+  constructor(
+    private router: Router,
+    private authenticationService: AuthenticationService
+  ) {
+    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+  }
 
   ngOnInit() {
 
+  }
+
+  get isAdmin() {
+    return this.currentUser && this.currentUser.username === 'root' ;
+  }
+
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
   }
 
 }
