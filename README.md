@@ -9,7 +9,7 @@ The Weather APP is a weather inquiry system made using the OpenWeatherMap API. T
 
 # Technologies #
 
--Java 8
+-Java 8 <br>
 -Spring Boot
 -Hibernate
 -MYSQL
