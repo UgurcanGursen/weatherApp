@@ -10,11 +10,11 @@ The Weather APP is a weather inquiry system made using the OpenWeatherMap API. T
 # Technologies #
 
 -Java 8 <br>
--Spring Boot
--Hibernate
--MYSQL
--Spring Rest Services
--Swagger 2
--Spring Security & JWT
+-Spring Boot<br>
+-Hibernate<br>
+-MYSQL<br>
+-Spring Rest Services<br>
+-Swagger 2<br>
+-Spring Security & JWT<br>
 
 # To Do #
