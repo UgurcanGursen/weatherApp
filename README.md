@@ -15,7 +15,6 @@ The Weather APP is a weather inquiry system made using the OpenWeatherMap API. T
 -MYSQL
 -Spring Rest Services
 -Swagger 2
+-Spring Security & JWT
 
 # To Do #
-
-Front-End
