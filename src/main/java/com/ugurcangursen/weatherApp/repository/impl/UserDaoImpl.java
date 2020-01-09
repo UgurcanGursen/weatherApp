@@ -2,10 +2,7 @@ package com.ugurcangursen.weatherApp.repository.impl;
 
 
 import com.ugurcangursen.weatherApp.entity.User;
-import com.ugurcangursen.weatherApp.entity.UserRoles;
-import com.ugurcangursen.weatherApp.entity.Weather;
 import com.ugurcangursen.weatherApp.repository.UserDAO;
-import com.ugurcangursen.weatherApp.repository.UserRolesDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,15 +16,13 @@ public class UserDaoImpl implements UserDAO {
 
     // define field for entitymanager
     private EntityManager entityManager;
-    private UserRolesDAO userRolesDAO;
 
 
     // set up constructor injection
     @Autowired
 
-    public UserDaoImpl(EntityManager entityManager, UserRolesDAO userRolesDAO) {
+    public UserDaoImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
-        this.userRolesDAO = userRolesDAO;
     }
 
     @Override
@@ -82,11 +77,8 @@ public class UserDaoImpl implements UserDAO {
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
         // save user
-        UserRoles userRoles = userRolesDAO.findById(user.getRid());
-        user.setRole(userRoles);
         if (user.getRole() == null) {
-            UserRoles role = new UserRoles(2);
-            user.setRole(role);
+            user.setRole("USER");
         }
 
         currentSession.saveOrUpdate(user);

@@ -18,28 +18,18 @@ public class User implements Serializable {
     @Column(name = "username")
     private String username;
 
-    private int rid;
 
-    @Column(name = "pwd")
+    @Column(name = "password")
     private String password;
 
-    @JoinColumn(name = "role_id")
-    @ManyToOne(optional = true)
-    private UserRoles role;
-
+    @Column(name = "role")
+    private String role;
 
 
     public User() {
     }
 
 
-    public int getRid() {
-        return rid;
-    }
-
-    public void setRid(int rid) {
-        this.rid = rid;
-    }
 
     public Long getId() {
         return id;
@@ -65,22 +55,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public UserRoles getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(UserRoles role) {
+    public void setRole(String role) {
         this.role = role;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", role=" + role +
-                '}';
     }
 
     @Override
@@ -98,4 +78,17 @@ public class User implements Serializable {
     public int hashCode() {
         return Objects.hash(getId(), getUsername(), getPassword(), getRole());
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                '}';
+    }
 }
+
+
+

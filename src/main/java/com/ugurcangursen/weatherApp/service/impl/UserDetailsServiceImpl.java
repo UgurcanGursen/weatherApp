@@ -31,7 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     }
 
     private static Collection<? extends GrantedAuthority> getAuthorities(User user) {
-        String userRoles = user.getRole().getRole_name();
+        String userRoles = user.getRole();
         Collection<GrantedAuthority> authorities = AuthorityUtils.createAuthorityList(userRoles);
         return authorities;
     }

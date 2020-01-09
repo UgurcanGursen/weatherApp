@@ -34,7 +34,7 @@ public class AccountController {
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
         final User user = userDao.findByUsername(request.getUsername());
         final String token = jwtTokenUtil.generateToken(user);
-        return ResponseEntity.ok(new TokenResponse(user.getUsername(), token));
+        return ResponseEntity.ok(new TokenResponse(user.getUsername(), token,user.getRole()));
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)

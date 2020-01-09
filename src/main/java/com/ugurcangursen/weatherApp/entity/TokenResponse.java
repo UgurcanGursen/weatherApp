@@ -4,14 +4,17 @@ public class TokenResponse {
 
     private String username;
     private String token;
+    private String role;
+
+    public TokenResponse(String username, String token, String role) {
+        this.username = username;
+        this.token = token;
+        this.role = role;
+    }
 
     public TokenResponse() {
     }
 
-    public TokenResponse(String username, String token) {
-        this.username = username;
-        this.token = token;
-    }
 
     public String getUsername() {
         return username;
@@ -27,5 +30,13 @@ public class TokenResponse {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

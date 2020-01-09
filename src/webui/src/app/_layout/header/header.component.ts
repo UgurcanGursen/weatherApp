@@ -11,6 +11,7 @@ import {AuthenticationService} from "../../security/authentication.service";
 export class HeaderComponent implements OnInit {
 
   currentUser: User;
+
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService
@@ -23,7 +24,7 @@ export class HeaderComponent implements OnInit {
   }
 
   get isAdmin() {
-    return this.currentUser && this.currentUser.username === 'root' ;
+    return this.currentUser && this.currentUser.role === 'ADMIN' ;
   }
 
   logout() {

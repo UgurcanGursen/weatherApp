@@ -12,7 +12,4 @@ public final class ControllerPaths {
         public static final String CTRL = BASE_PATH + "/weather";
     }
 
-    public static final class CityCtrl {
-        public static final String CTRL = BASE_PATH + "/city";
-    }
 }
