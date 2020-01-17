@@ -11,7 +11,6 @@ export class WeatherComponent implements OnInit {
 
   weathers: Weather;
   cityName: string;
-
   isShow = false;
 
   constructor(private weatherService: WeatherService) { }
@@ -28,8 +27,13 @@ export class WeatherComponent implements OnInit {
   }
 
   toggleDisplay() {
-    this.isShow = !this.isShow;
+    if (this.isShow == false) {
+      this.isShow = !this.isShow;
+    } else {}
+
   }
+
+
 
 
 }

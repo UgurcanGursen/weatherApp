@@ -4,6 +4,7 @@ import { WeatherComponent } from './weather.component';
 import {WeatherRoutingModule} from "./weather.routing.module";
 import {WeatherService} from "../../services/shared/weather.service";
 import {FormsModule} from "@angular/forms";
+import {HeaderComponent} from "../../_layout";
 
 
 

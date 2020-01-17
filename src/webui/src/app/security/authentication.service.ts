@@ -43,7 +43,5 @@ export class AuthenticationService {
       }));
   }
 
-  getUserRole() {
-    return JSON.parse(localStorage.getItem('currentUser')).role;
-  }
+
 }
