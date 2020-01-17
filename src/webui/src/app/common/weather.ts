@@ -10,7 +10,7 @@ export class Weather {
   sunsetTime: string;
   icon: string;
   elapsedTime: number;
-  result: string
+  result: string;
   ip: string;
   createdAt: Date;
 }

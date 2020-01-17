@@ -40,7 +40,7 @@ export class LogsComponent implements OnInit {
   }
 
   get isAdmin() {
-    return this.currentUser && this.currentUser.username === 'root' ;
+    return this.currentUser && this.currentUser.role === 'ADMIN' ;
   }
 
 }
